@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<List<Album>> fetchAlbums() async {
     final response = await http.get(
-      Uri.parse('https://jsonplaceholder.typicode.com/albums/1'),
+      Uri.parse('https://jsonplaceholder.typicode.com/albums'),
     );
 
     if (response.statusCode == 200) {
